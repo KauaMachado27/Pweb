@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto::after {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 420px) {
+    #box {
+        background: gray;
+    }
+
+    #texto::after {
+        content: "Cinza";
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    #box {
+        background: orange;
+    }
+
+    #texto::after {
+        content: "Laranja";
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #box {
+        background: magenta;
+    }
+
+    #texto::after {
+        content: "Rosa";
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+    #box {
+        background: red;
+    }
+
+    #texto::after {
+        content: "Vermelho";
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+    #box {
+        background: purple;
+    }
+
+    #texto::after {
+        content: "Roxo";
+    }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    #box {
+        background: yellow;
+    }
+
+    #texto::after {
+        content: "Amarelo";
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    #box {
+        background: green;
+    }
+
+    #texto::after {
+        content: "Verde";
+    }
+}
