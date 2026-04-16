@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedra, Papel ou Tesoura</title>
+</head>
+<body>
+
+<script>
+  const opcoes = ['pedra', 'papel', 'tesoura'];
+
+  let jogador = prompt("Escolha: pedra, papel ou tesoura").toLowerCase();
+
+  let r = Math.random();
+  let computador;
+  if (r < 0.33) {
+    computador = 'pedra';
+  } else if (r < 0.66) {
+    computador = 'papel';
+  } else {
+    computador = 'tesoura';
+  }
+
+  alert("Você escolheu: " + jogador + "\nComputador escolheu: " + computador);
+
+  if (jogador === computador) {
+    alert("Empate!");
+  } else if (
+    (jogador === 'pedra' && computador === 'tesoura') ||
+    (jogador === 'tesoura' && computador === 'papel') ||
+    (jogador === 'papel' && computador === 'pedra')
+  ) {
+    alert("Você venceu!");
+  } else {
+    alert("Computador venceu!");
+  }
+</script>
+
+</body>
+</html>
