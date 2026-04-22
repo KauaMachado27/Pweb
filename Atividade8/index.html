@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Filme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Pesquisa de Filme</h1>
+
+  <label>Idade: <input type="number" id="idade"></label>
+  <label>Sexo:
+    <select id="sexo">
+      <option value="">--</option>
+      <option value="feminino">Feminino</option>
+      <option value="masculino">Masculino</option>
+      <option value="outros">Outros</option>
+    </select>
+  </label>
+  <label>Opinião:
+    <select id="opiniao">
+      <option value="">--</option>
+      <option value="4">Ótimo</option>
+      <option value="3">Bom</option>
+      <option value="2">Regular</option>
+      <option value="1">Péssimo</option>
+    </select>
+  </label>
+
+  <div class="btn-group">
+    <button onclick="adicionarEspectador()">Adicionar</button>
+    <button onclick="calcularResultados()">Calcular</button>
+    <button onclick="limparDados()">Limpar</button>
+  </div>
+
+  <p>Inseridos: <span id="contagem">0</span> / 45</p>
+
+  <div id="resultados">
+    <h2>Resultados</h2>
+    <p>Média de idade: <strong id="res-media"></strong></p>
+    <p>Mais velha: <strong id="res-maisVelha"></strong></p>
+    <p>Mais nova: <strong id="res-maisNova"></strong></p>
+    <p>Péssimo: <strong id="res-pessimo"></strong></p>
+    <p>% Ótimo/Bom: <strong id="res-otimoBom"></strong></p>
+    <p>Feminino: <strong id="res-feminino"></strong></p>
+    <p>Masculino: <strong id="res-masculino"></strong></p>
+    <p>Outros: <strong id="res-outros"></strong></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
