@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eceff1;
+}
+
+.container {
+    width: 500px;
+    margin: 40px auto;
+    background: #2f3e46;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #cad2c5;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #84a98c;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #cad2c5;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #84a98c;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    background-color: #f8f9fa;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #52796f;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.pesquisa {
+    text-align: center;
+    margin-top: 30px;
+    color: #cad2c5;
+}
+
+.pesquisa p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    margin-top: 15px;
+}
+
+.radio-group input {
+    width: auto;
+    margin-left: 10px;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #84a98c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #52796f;
+}
